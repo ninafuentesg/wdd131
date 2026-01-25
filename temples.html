@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Temple Album</title>
-
-  <meta name="description" content="A responsive temple album page showcasing temples using HTML, CSS Grid, Flexbox, and JavaScript.">
-  <meta name="author" content="Nina Fuentes">
+  <meta name="description" content="A photo album showcasing beautiful temples from around the world.">
+  <meta name="author" content="Nina Adriana Fuentes Guerrero">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,81 +17,68 @@
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
 
-  <!-- JS -->
+  <!-- JavaScript -->
   <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <h2>Temple Album</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Temple Album</h1>
+  <main>
+    <!-- ✅ ÚNICO h1 -->
+    <h1>Beautiful Temples Around the World</h1>
 
-  <button id="menuButton" aria-label="Toggle Navigation Menu">☰</button>
+    <section class="gallery">
+      <figure>
+        <img src="images/temple1.jpg" alt="Temple 1">
+        <figcaption>Temple 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="Temple 2">
+        <figcaption>Temple 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Temple 3">
+        <figcaption>Temple 3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.jpg" alt="Temple 4">
+        <figcaption>Temple 4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.jpg" alt="Temple 5">
+        <figcaption>Temple 5</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.jpg" alt="Temple 6">
+        <figcaption>Temple 6</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple7.jpg" alt="Temple 7">
+        <figcaption>Temple 7</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple8.jpg" alt="Temple 8">
+        <figcaption>Temple 8</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple9.jpg" alt="Temple 9">
+        <figcaption>Temple 9</figcaption>
+      </figure>
+    </section>
+  </main>
 
-  <nav id="navMenu">
-    <a href="#">Home</a>
-    <a href="#">Old</a>
-    <a href="#">New</a>
-    <a href="#">Large</a>
-    <a href="#">Small</a>
-  </nav>
-</header>
-
-<main>
-  <h1>Beautiful Temples Around the World</h1>
-
-  <section class="gallery">
-    <figure>
-      <img src="images/temple1.jpg" alt="Salt Lake City Utah Temple">
-      <figcaption>Salt Lake Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple2.jpg" alt="Rome Italy Temple">
-      <figcaption>Rome Italy Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple3.jpg" alt="Tokyo Japan Temple">
-      <figcaption>Tokyo Japan Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple4.jpg" alt="Paris France Temple">
-      <figcaption>Paris France Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple5.jpg" alt="Laie Hawaii Temple">
-      <figcaption>Laie Hawaii Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple6.jpg" alt="Buenos Aires Argentina Temple">
-      <figcaption>Buenos Aires Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple7.jpg" alt="Seoul Korea Temple">
-      <figcaption>Seoul Korea Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple8.jpg" alt="London England Temple">
-      <figcaption>London England Temple</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/temple9.jpg" alt="Lima Peru Temple">
-      <figcaption>Lima Peru Temple</figcaption>
-    </figure>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; <span id="year"></span> Nina Fuentes | WDD 131</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
-
+  <footer>
+    <p>&copy; 2026 Temple Album</p>
+  </footer>
 </body>
 </html>
