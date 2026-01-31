@@ -1,4 +1,4 @@
-// static values
+// Static values for now
 const temp = 45; // Fahrenheit
 const windSpeed = 8; // mph
 
@@ -10,7 +10,7 @@ function calculateWindChill(tempF, windMph) {
     }
 }
 
-// Display values
+// Display weather values
 document.getElementById("temp").textContent = temp;
 document.getElementById("wind").textContent = windSpeed;
 document.getElementById("windchill").textContent = calculateWindChill(temp, windSpeed);
