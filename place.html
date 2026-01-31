@@ -4,31 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peru - Discover its Wonders</title>
-  <meta name="description" content="Discover Peru, a country with incredible landscapes, ancient history, and vibrant culture. Explore Machu Picchu, the Nazca Lines, Colca Valley, and its delicious cuisine.">
+  <meta name="description" content="Discover Peru, a country with incredible landscapes, ancient history, and vibrant culture.">
   <meta name="author" content="Nina Adriana Fuentes Guerrero">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="css/styles.css">
+
+ 
   <script defer src="js/scripts.js"></script>
 </head>
 <body>
 
-  <!-- HERO -->
+ 
   <header class="hero">
+    <picture>
+      <source srcset="images/peru-large.webp" media="(min-width: 768px)">
+      <img src="images/peru-small.webp" alt="Peru landscape">
+    </picture>
     <h1>Peru</h1>
     <p class="subtitle">Discover its landscapes, culture, and wonders</p>
   </header>
 
   <main>
-    <!-- About Section -->
+   
     <section class="info">
       <h2>About Peru</h2>
       <p>Peru is located on the west coast of South America, known for its ancient history, vibrant culture, and breathtaking natural landscapes.</p>
       <p>From the Amazon rainforest to the Andes, and from the Pacific coast to the valleys, Peru has wonders for every traveler.</p>
-      
-      <!-- Additional content to fill space -->
+
+   
       <div class="extra-content">
         <h3>Peruvian Culture</h3>
         <p>Peru has a rich cultural heritage with traditions dating back thousands of years, including festivals, music, and crafts.</p>
@@ -51,7 +62,7 @@
       </div>
     </section>
 
-    <!-- Weather Section -->
+   
     <section class="weather">
       <h2>Weather</h2>
       <img class="weather-icon" src="images/weather.svg" alt="Weather icon">
@@ -62,7 +73,7 @@
       </div>
     </section>
 
-    <!-- Gallery Section -->
+ 
     <section class="gallery">
       <h2>Peru's Wonders</h2>
       <div class="cards">
@@ -81,12 +92,11 @@
           <h3>Lake Titicaca</h3>
           <p>The highest navigable lake in the world with floating islands.</p>
         </div>
-        <!-- Puedes agregar más cards -->
+        
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>
       © <span id="year"></span> | Nina Adriana Fuentes Guerrero | Peru <br>
