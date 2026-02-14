@@ -1,28 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Submitted</title>
-    <script src="js/review.js" defer></script>
-    <link rel="stylesheet" href="styles/form.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Required meta tags -->
+    <meta name="description" content="Product review form to share your experience and feedback." />
+    <meta name="author" content="Nina Fuentes" />
+
+    <title>Product Review</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/form.css" />
 </head>
 <body>
 
-<main class="confirmation">
-    <h1>Thank You! 🌸</h1>
-    <p>Your review has been submitted successfully.</p>
-    <p class="counter">
-        Total reviews submitted:
-        <span id="counter">0</span>
-    </p>
+<header>
+    <h1>Product Review</h1>
+</header>
 
-    <a href="form.html" class="back-btn">Submit Another Review</a>
+<main>
+    <form method="get" action="review.html">
+
+        <!-- Product selection -->
+        <div class="form-group">
+            <label for="product">Select a Product:</label>
+            <select id="product" name="product" required>
+                <option value="">-- Choose a product --</option>
+                <option value="laptop">Laptop</option>
+                <option value="phone">Smartphone</option>
+                <option value="headphones">Headphones</option>
+                <option value="tablet">Tablet</option>
+            </select>
+        </div>
+
+        <!-- Rating -->
+        <fieldset class="form-group">
+            <legend>Overall Rating</legend>
+
+            <label for="star1">
+                <input type="radio" id="star1" name="rating" value="1" required />
+                1 Star
+            </label>
+
+            <label for="star2">
+                <input type="radio" id="star2" name="rating" value="2" required />
+                2 Stars
+            </label>
+
+            <label for="star3">
+                <input type="radio" id="star3" name="rating" value="3" required />
+                3 Stars
+            </label>
+
+            <label for="star4">
+                <input type="radio" id="star4" name="rating" value="4" required />
+                4 Stars
+            </label>
+
+            <label for="star5">
+                <input type="radio" id="star5" name="rating" value="5" required />
+                5 Stars
+            </label>
+        </fieldset>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label for="review-date">Date of Purchase:</label>
+            <input type="date" id="review-date" name="review-date" required />
+        </div>
+
+        <!-- Features -->
+        <fieldset class="form-group">
+            <legend>Useful Features</legend>
+
+            <label for="feature1">
+                <input type="checkbox" id="feature1" name="features" value="battery" />
+                Long Battery Life
+            </label>
+
+            <label for="feature2">
+                <input type="checkbox" id="feature2" name="features" value="design" />
+                Good Design
+            </label>
+
+            <label for="feature3">
+                <input type="checkbox" id="feature3" name="features" value="performance" />
+                High Performance
+            </label>
+
+            <label for="feature4">
+                <input type="checkbox" id="feature4" name="features" value="price" />
+                Good Price
+            </label>
+        </fieldset>
+
+        <!-- Review text -->
+        <div class="form-group">
+            <label for="review-text">Written Review:</label>
+            <textarea id="review-text" name="review-text" rows="4" placeholder="Share your experience..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+            <button type="submit">Submit Review</button>
+        </div>
+
+    </form>
 </main>
 
-
 <footer>
-    <p>©2024 🐾 Nina Adriana Fuentes Guerrero 🐾</p>
+    <p>&copy; 2026 Nina Fuentes</p>
 </footer>
 
 </body>
