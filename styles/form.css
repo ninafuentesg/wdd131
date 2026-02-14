@@ -1,118 +1,99 @@
-/* ====== RESET ====== */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    margin: 0;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(135deg, #f0e9f2, #e3d6e8);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* ====== MAIN CONTAINER ====== */
-main {
-    background: #ffffff;
-    max-width: 550px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* ====== HEADER ====== */
-h1 {
-    text-align: center;
-    color: #4a0033;
-    margin-bottom: 25px;
-}
-
-/* ====== FORM ELEMENTS ====== */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: 600;
-    margin-top: 18px;
+    background-color: #f5f5f5;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-input,
+/* Header */
+header {
+    background-color: #4a0033;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main form container */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Inputs */
 select,
+input[type="date"],
+input[type="text"],
 textarea {
-    margin-top: 6px;
+    width: 100%;
     padding: 10px;
-    border-radius: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
-    font-size: 14px;
-    transition: all 0.2s ease;
 }
 
-/* Focus effect */
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #7b2c6f;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(123, 44, 111, 0.15);
-}
-
-/* ====== FIELDSETS ====== */
+/* Fieldsets */
 fieldset {
     border: none;
-    padding: 0;
     margin-top: 15px;
 }
 
 legend {
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-/* ====== RATING STARS ====== */
+/* Radio & checkbox labels */
 fieldset label {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-/* ====== CHECKBOX GROUP ====== */
-fieldset input[type="checkbox"] {
-    margin-right: 6px;
-}
-
-/* ====== TEXTAREA ====== */
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-/* ====== SUBMIT BUTTON ====== */
+/* Submit button */
 input[type="submit"] {
-    margin-top: 25px;
-    background: #4a0033;
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #4a0033;
     color: white;
     border: none;
-    font-weight: 600;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background: #7b2c6f;
+    background-color: #6a0048;
 }
 
-/* ====== FOOTER ====== */
+/* Footer (solo UNA regla) */
 footer {
     margin-top: auto;
     text-align: center;
@@ -122,61 +103,9 @@ footer {
     font-size: 14px;
 }
 
-
-/* ===============================
-   CONFIRMATION PAGE
-================================= */
-.confirmation {
-  text-align: center;
-}
-
-.confirmation p {
-  font-size: 18px;
-  margin: 15px 0;
-  color: #333;
-}
-
-.counter {
-  font-weight: bold;
-  font-size: 20px;
-  color: #7b2c6f;
-}
-
-/* Back button */
-.back-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 18px;
-  background: #4a0033;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.back-btn:hover {
-  background: #7b2c6f;
-}
-
-/* ===============================
-   FOOTER
-================================= */
-footer {
-  margin-top: auto;
-  text-align: center;
-  background: #4a0033;
-  color: white;
-  padding: 15px;
-  font-size: 14px;
-}
-
-/* ===============================
-   RESPONSIVE
-================================= */
+/* Responsive */
 @media (max-width: 600px) {
-  main {
-    margin: 20px auto;
-    padding: 20px;
-  }
+    form {
+        padding: 20px;
+    }
 }
